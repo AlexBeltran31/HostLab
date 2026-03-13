@@ -23,7 +23,7 @@
         </div>
     @endif
 
-    {{ $slot }}
+    @yield('content')
 
 </body>
 </html>
