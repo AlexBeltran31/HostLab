@@ -16,16 +16,16 @@
 </head>
 <body class="antialiased">
 
-    {{-- Flash message --}}
-    @if (session('success'))
-        <div class="fixed top-4 right-4 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg">
-            {{ session('success') }}
-        </div>
-    @endif
-
     <nav class="fixed top-0 right-0 z-50 p-4">
         @include('landing.components.language-switcher')
     </nav>
+
+    {{-- Flash message --}}
+    @if (session('success'))
+        <div class="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg whitespace-nowrap">
+            {{ session('success') }}
+        </div>
+    @endif
 
     @yield('content')
 
