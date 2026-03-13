@@ -23,6 +23,10 @@
         </div>
     @endif
 
+    <nav class="fixed top-0 right-0 z-50 p-4">
+        @include('landing.components.language-switcher')
+    </nav>
+
     @yield('content')
 
 </body>
