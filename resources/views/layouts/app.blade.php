@@ -16,9 +16,7 @@
 </head>
 <body class="antialiased">
 
-    <nav class="fixed top-0 right-0 z-50 p-4">
-        @include('landing.components.language-switcher')
-    </nav>
+    @include('landing.components.header')
 
     {{-- Flash message --}}
     @if (session('success'))
@@ -30,7 +28,9 @@
         </div>
     @endif
 
-    @yield('content')
+    <main class="pt-16">
+        @yield('content')
+    </main>
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -40,7 +40,7 @@
                 if (target) {
                     const start = window.scrollY;
                     const end = target.getBoundingClientRect().top + window.scrollY;
-                    const duration = 1500; // milisegundos — subir este número para más lento
+                    const duration = 800;
                     const startTime = performance.now();
 
                     function scroll(currentTime) {

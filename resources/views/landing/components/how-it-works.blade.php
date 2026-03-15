@@ -1,4 +1,4 @@
-<section class="py-24 bg-white px-6">
+<section id="how-it-works" class="py-24 bg-white px-6">
     <div class="max-w-4xl mx-auto">
 
         <div class="text-center">

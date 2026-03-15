@@ -4,6 +4,12 @@ return [
     // Meta
     'meta_description' => 'HostLab — Premium short-term rental management for high-end urban properties.',
 
+    // Nav
+    'nav_about'    => 'About',
+    'nav_approach' => 'Approach',
+    'nav_how'      => 'How it works',
+    'nav_contact'  => 'Contact',
+
     // Hero
     'hero_badge'    => 'Premium Management',
     'hero_title'    => 'Your property deserves more than a platform.',
