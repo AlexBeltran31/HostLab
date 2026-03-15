@@ -1,4 +1,4 @@
-<section class="py-24 bg-gray-950 text-white px-6">
+<section id="approach" class="py-24 bg-gray-950 text-white px-6">
     <div class="max-w-5xl mx-auto">
 
         <div class="text-center">
