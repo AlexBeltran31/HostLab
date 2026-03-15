@@ -10,7 +10,8 @@ class Lead extends Model
         'nombre',
         'email',
         'telefono',
-        'ciudad',
+        'region',
+        'comuna',
         'tipo_propiedad',
         'ya_publicada',
         'permite_arriendo_temporal',
@@ -18,7 +19,7 @@ class Lead extends Model
     ];
 
     protected $casts = [
-        'ya_publicada'               => 'boolean',
-        'permite_arriendo_temporal'  => 'boolean',
+        'ya_publicada'              => 'boolean',
+        'permite_arriendo_temporal' => 'boolean',
     ];
 }

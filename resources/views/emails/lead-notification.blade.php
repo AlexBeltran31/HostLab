@@ -29,7 +29,8 @@
                 <tr><td>Nombre</td><td>{{ $lead->nombre }}</td></tr>
                 <tr><td>Email</td><td>{{ $lead->email }}</td></tr>
                 <tr><td>Teléfono</td><td>{{ $lead->telefono ?? '—' }}</td></tr>
-                <tr><td>Ciudad</td><td>{{ $lead->ciudad }}</td></tr>
+                <tr><td>Región</td><td>{{ $lead->region }}</td></tr>
+                <tr><td>Comuna</td><td>{{ $lead->comuna }}</td></tr>
                 <tr><td>Tipo de propiedad</td><td>{{ ucfirst($lead->tipo_propiedad) }}</td></tr>
                 <tr><td>¿Ya publicada?</td><td>{{ $lead->ya_publicada ? 'Sí' : 'No' }}</td></tr>
                 <tr><td>¿Permite arriendo temporal?</td><td>{{ $lead->permite_arriendo_temporal ? 'Sí' : 'No' }}</td></tr>
