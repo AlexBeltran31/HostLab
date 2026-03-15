@@ -1,4 +1,4 @@
-<section class="py-24 bg-white px-6">
+<section id="positioning" class="py-24 bg-white px-6">
     <div class="max-w-5xl mx-auto text-center">
 
         <span class="text-sm font-medium tracking-widest text-amber-400 uppercase">

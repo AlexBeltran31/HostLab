@@ -4,6 +4,12 @@ return [
     // Meta
     'meta_description' => 'HostLab — Gestión premium de arriendos temporales para propiedades urbanas de alto estándar.',
 
+    // Nav
+    'nav_about'    => 'Nosotros',
+    'nav_approach' => 'Enfoque',
+    'nav_how'      => 'Cómo funciona',
+    'nav_contact'  => 'Contacto',
+
     // Hero
     'hero_badge'    => 'Gestión Premium',
     'hero_title'    => 'Tu propiedad merece más que una plataforma.',
