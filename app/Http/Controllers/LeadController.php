@@ -10,12 +10,14 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
+use App\Data\ChileRegiones;
 
 class LeadController extends Controller
 {
-    public function index(): View
-    {
-        return view('landing.index');
+    public function index(): View {
+        return view('landing.index', [
+            'regiones' => ChileRegiones::all(),
+        ]);
     }
 
     public function store(StoreLeadRequest $request): RedirectResponse

@@ -34,12 +34,36 @@
                        class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-amber-400 focus:outline-none">
             </div>
 
-            {{-- Ciudad --}}
+            {{-- Región --}}
             <div>
-                <label class="block text-sm font-medium text-gray-700">{{ __('landing.form_city') }}</label>
-                <input type="text" name="ciudad" value="{{ old('ciudad') }}"
-                       class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-amber-400 focus:outline-none @error('ciudad') border-red-500 @enderror">
-                @error('ciudad') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
+                <label class="block text-sm font-medium text-gray-700">{{ __('landing.form_region') }}</label>
+                <select id="region" name="region"
+                        class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-amber-400 focus:outline-none @error('region') border-red-500 @enderror">
+                    <option value="">{{ __('landing.form_select') }}</option>
+                    @foreach(array_keys($regiones) as $region)
+                        <option value="{{ $region }}" {{ old('region') == $region ? 'selected' : '' }}>
+                            {{ $region }}
+                        </option>
+                    @endforeach
+                </select>
+                @error('region') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
+            </div>
+
+            {{-- Comuna --}}
+            <div>
+                <label class="block text-sm font-medium text-gray-700">{{ __('landing.form_comuna') }}</label>
+                <select id="comuna" name="comuna" disabled
+                        class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-amber-400 focus:outline-none @error('comuna') border-red-500 @enderror disabled:bg-gray-100 disabled:text-gray-400">
+                    <option value="">{{ __('landing.form_select_region_first') }}</option>
+                    @if(old('region'))
+                        @foreach($regiones[old('region')] as $comuna)
+                            <option value="{{ $comuna }}" {{ old('comuna') == $comuna ? 'selected' : '' }}>
+                                {{ $comuna }}
+                            </option>
+                        @endforeach
+                    @endif
+                </select>
+                @error('comuna') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
             </div>
 
             {{-- Tipo de propiedad --}}
@@ -104,3 +128,42 @@
         </form>
     </div>
 </section>
+
+@php
+    $selectText = __('landing.form_select');
+    $selectRegionText = __('landing.form_select_region_first');
+@endphp
+
+<script>
+    const regiones = @json($regiones);
+    const regionSelect = document.getElementById('region');
+    const comunaSelect = document.getElementById('comuna');
+    const selectText = "{{ $selectText }}";
+    const selectRegionText = "{{ $selectRegionText }}";
+
+    regionSelect.addEventListener('change', function() {
+        const region = this.value;
+        comunaSelect.innerHTML = '';
+
+        if (region && regiones[region]) {
+            comunaSelect.disabled = false;
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = selectText;
+            comunaSelect.appendChild(defaultOption);
+
+            regiones[region].forEach(function(comuna) {
+                const option = document.createElement('option');
+                option.value = comuna;
+                option.textContent = comuna;
+                comunaSelect.appendChild(option);
+            });
+        } else {
+            comunaSelect.disabled = true;
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = selectRegionText;
+            comunaSelect.appendChild(defaultOption);
+        }
+    });
+</script>
