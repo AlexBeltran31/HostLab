@@ -29,5 +29,34 @@
 
     @yield('content')
 
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const start = window.scrollY;
+                    const end = target.getBoundingClientRect().top + window.scrollY;
+                    const duration = 1500; // milisegundos — sube este número para más lento
+                    const startTime = performance.now();
+
+                    function scroll(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const ease = progress < 0.5
+                            ? 2 * progress * progress
+                            : -1 + (4 - 2 * progress) * progress;
+
+                        window.scrollTo(0, start + (end - start) * ease);
+
+                        if (progress < 1) requestAnimationFrame(scroll);
+                    }
+
+                    requestAnimationFrame(scroll);
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
