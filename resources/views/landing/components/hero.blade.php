@@ -1,4 +1,4 @@
-<section class="min-h-screen flex items-center justify-center bg-gray-950 text-white px-6">
+<section id="hero" class="min-h-screen flex items-center justify-center bg-gray-950 text-white px-6">
     <div class="max-w-4xl mx-auto text-center">
 
         <span class="text-sm font-medium tracking-widest text-amber-400 uppercase">

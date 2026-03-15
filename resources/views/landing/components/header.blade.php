@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
 
         {{-- Logo + Nombre --}}
-        <a href="{{ route('home') }}" class="flex items-center gap-3">
+        <a href="#hero" class="flex items-center gap-3">
             <img src="{{ asset('images/logo.png') }}" alt="HostLab" class="h-20 w-auto">
             <span class="text-gray-950 font-semibold text-3xl tracking-tight">HostLab</span>
         </a>
