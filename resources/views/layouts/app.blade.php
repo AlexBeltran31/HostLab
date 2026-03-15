@@ -40,7 +40,7 @@
                 if (target) {
                     const start = window.scrollY;
                     const end = target.getBoundingClientRect().top + window.scrollY;
-                    const duration = 1500;
+                    const duration = 800;
                     const startTime = performance.now();
 
                     function scroll(currentTime) {
