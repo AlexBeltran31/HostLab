@@ -22,8 +22,11 @@
 
     {{-- Flash message --}}
     @if (session('success'))
-        <div class="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg whitespace-nowrap">
-            {{ session('success') }}
+        <div id="flash-message" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg whitespace-nowrap flex items-center gap-4">
+            <span>{{ session('success') }}</span>
+            <button onclick="document.getElementById('flash-message').remove()" class="text-white font-bold text-lg leading-none hover:text-green-200 transition">
+                &times;
+            </button>
         </div>
     @endif
 
@@ -37,7 +40,7 @@
                 if (target) {
                     const start = window.scrollY;
                     const end = target.getBoundingClientRect().top + window.scrollY;
-                    const duration = 1500; // milisegundos — sube este número para más lento
+                    const duration = 1500; // milisegundos — subir este número para más lento
                     const startTime = performance.now();
 
                     function scroll(currentTime) {
