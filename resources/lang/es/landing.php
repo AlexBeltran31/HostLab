@@ -6,20 +6,19 @@ return [
 
     // Nav
     'nav_about'    => 'Nosotros',
-    'nav_approach' => 'Enfoque',
+    'nav_approach' => 'Servicios',
     'nav_how'      => 'Cómo funciona',
     'nav_contact'  => 'Contacto',
 
     // Hero
     'hero_badge'    => 'Gestión Premium',
     'hero_title'    => 'Tu propiedad merece más que una plataforma.',
-    'hero_subtitle' => 'Nos encargamos de todo para que tu propiedad genere ingresos sin que tengas que preocuparte por nada.',
+    'hero_subtitle' => 'Gestionamos tu propiedad para que genere ingresos sin complicaciones.',
     'hero_cta'      => 'Evalúa tu propiedad gratis',
 
     // Positioning
     'positioning_badge'        => 'Por qué HostLab',
-    'positioning_title'        => 'Gestión de alto estándar para propiedades urbanas premium.',
-    'positioning_description'  => 'No somos una plataforma más. Somos tu socio estratégico para maximizar el rendimiento de tu propiedad con total tranquilidad.',
+    'positioning_title'        => 'Gestión premium para propietarios exigentes.',    'positioning_description'  => 'No somos una plataforma más. Somos tu socio estratégico para maximizar el rendimiento de tu propiedad con total tranquilidad.',
     'positioning_feat1_title'  => 'Solo propiedades premium',
     'positioning_feat1_desc'   => 'Trabajamos exclusivamente con propiedades de alto estándar en ubicaciones urbanas privilegiadas.',
     'positioning_feat2_title'  => 'Máxima ocupación',
@@ -55,7 +54,7 @@ return [
 
     // Form
     'form_title'              => 'Evalúa tu propiedad',
-    'form_subtitle'           => 'Completa el formulario y te contactamos en menos de 24 horas.',
+    'form_subtitle'           => 'Completa el formulario y te contactamos en breve.',
     'form_name'               => 'Nombre completo',
     'form_email'              => 'Correo electrónico',
     'form_phone'              => 'Teléfono',
@@ -71,9 +70,8 @@ return [
     'form_success'            => '¡Gracias! Nos pondremos en contacto contigo pronto.',
 
     // Property types
-    'property_apartment' => 'Apartamento',
+    'property_apartment' => 'Departamento',
     'property_house'     => 'Casa',
-    'property_studio'    => 'Estudio',
     'property_other'     => 'Otro',
 
     // Common

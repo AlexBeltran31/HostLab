@@ -10,10 +10,10 @@
             </h2>
         </div>
 
-        <div class="mt-16 space-y-10">
+        <div class="mt-16 space-y-6">
 
             @foreach ([1, 2, 3, 4] as $step)
-            <div class="flex items-start gap-6">
+            <div class="flex items-start gap-6 p-8 bg-gray-200 rounded-2xl">
                 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-400 text-gray-950 font-bold flex items-center justify-center text-lg">
                     {{ $step }}
                 </div>
@@ -28,7 +28,7 @@
 
         <div class="mt-16 text-center">
             <a href="#evaluacion"
-               class="inline-block bg-amber-400 text-gray-950 font-semibold px-8 py-4 rounded-full hover:bg-amber-300 transition">
+               class="inline-block bg-amber-400 text-gray-950 font-semibold px-6 py-2 rounded-full hover:bg-amber-300 transition">
                 {{ __('landing.how_cta') }}
             </a>
         </div>
