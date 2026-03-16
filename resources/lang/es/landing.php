@@ -6,7 +6,7 @@ return [
 
     // Nav
     'nav_about'    => 'Nosotros',
-    'nav_approach' => 'Enfoque',
+    'nav_approach' => 'Servicios',
     'nav_how'      => 'Cómo funciona',
     'nav_contact'  => 'Contacto',
 
@@ -18,8 +18,7 @@ return [
 
     // Positioning
     'positioning_badge'        => 'Por qué HostLab',
-    'positioning_title'        => 'Gestión de alto estándar para propiedades urbanas premium.',
-    'positioning_description'  => 'No somos una plataforma más. Somos tu socio estratégico para maximizar el rendimiento de tu propiedad con total tranquilidad.',
+    'positioning_title'        => 'Gestión premium para propietarios exigentes.',    'positioning_description'  => 'No somos una plataforma más. Somos tu socio estratégico para maximizar el rendimiento de tu propiedad con total tranquilidad.',
     'positioning_feat1_title'  => 'Solo propiedades premium',
     'positioning_feat1_desc'   => 'Trabajamos exclusivamente con propiedades de alto estándar en ubicaciones urbanas privilegiadas.',
     'positioning_feat2_title'  => 'Máxima ocupación',
