@@ -39,4 +39,9 @@ class StoreLeadRequest extends FormRequest
             'ya_publicada.required'              => 'Indica si la propiedad ya está publicada.',
         ];
     }
+
+    public function getRedirectUrl(): string
+    {
+        return url()->previous() . '#evaluacion';
+    }
 }

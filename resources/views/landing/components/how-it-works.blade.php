@@ -28,7 +28,7 @@
 
         <div class="mt-16 text-center">
             <a href="#evaluacion"
-               class="inline-block bg-amber-400 text-gray-950 font-semibold px-8 py-4 rounded-full hover:bg-amber-300 transition">
+               class="inline-block bg-amber-400 text-gray-950 font-semibold px-6 py-2 rounded-full hover:bg-amber-300 transition">
                 {{ __('landing.how_cta') }}
             </a>
         </div>
