@@ -4,7 +4,7 @@
         {{-- Logo + Nombre --}}
         <a href="#hero" class="flex items-center gap-3">
             <img src="{{ asset('images/logo.png') }}" alt="HostLab" class="h-20 w-auto">
-            <span class="text-gray-950 font-semibold text-3xl tracking-tight">HostLab</span>
+            <span class="text-gray-950 font-semibold text-4xl tracking-tight">HostLab</span>
         </a>
 
         {{-- Navegación --}}

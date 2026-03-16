@@ -1,4 +1,4 @@
-<section id="approach" class="py-24 bg-gray-950 text-white px-6">
+<section id="approach" class="h-screen flex items-center bg-gray-950 text-white px-6">
     <div class="max-w-5xl mx-auto">
 
         <div class="text-center">
@@ -33,6 +33,16 @@
             <div class="p-8 bg-gray-900 rounded-2xl">
                 <h3 class="text-lg font-semibold text-amber-400">{{ __('landing.approach_item4_title') }}</h3>
                 <p class="mt-3 text-gray-400 text-sm">{{ __('landing.approach_item4_desc') }}</p>
+            </div>
+
+            <div class="p-8 bg-gray-900 rounded-2xl">
+                <h3 class="text-lg font-semibold text-amber-400">{{ __('landing.positioning_feat2_title') }}</h3>
+                <p class="mt-3 text-gray-400 text-sm">{{ __('landing.positioning_feat2_desc') }}</p>
+            </div>
+
+            <div class="p-8 bg-gray-900 rounded-2xl">
+                <h3 class="text-lg font-semibold text-amber-400">{{ __('landing.positioning_feat3_title') }}</h3>
+                <p class="mt-3 text-gray-400 text-sm">{{ __('landing.positioning_feat3_desc') }}</p>
             </div>
 
         </div>
