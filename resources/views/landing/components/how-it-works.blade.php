@@ -10,10 +10,10 @@
             </h2>
         </div>
 
-        <div class="mt-16 space-y-10">
+        <div class="mt-16 space-y-6">
 
             @foreach ([1, 2, 3, 4] as $step)
-            <div class="flex items-start gap-6">
+            <div class="flex items-start gap-6 p-8 bg-gray-200 rounded-2xl">
                 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-400 text-gray-950 font-bold flex items-center justify-center text-lg">
                     {{ $step }}
                 </div>
