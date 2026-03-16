@@ -14,12 +14,10 @@ class Lead extends Model
         'comuna',
         'tipo_propiedad',
         'ya_publicada',
-        'permite_arriendo_temporal',
         'comentarios',
     ];
 
     protected $casts = [
         'ya_publicada'              => 'boolean',
-        'permite_arriendo_temporal' => 'boolean',
     ];
 }

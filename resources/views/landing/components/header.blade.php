@@ -10,19 +10,19 @@
         {{-- Navegación --}}
         <nav class="hidden md:flex items-center gap-8">
             <a href="#approach"
-                class="text-gray-600 hover:text-gray-950 text-sm font-medium transition">
+                class="text-gray-600 hover:text-gray-950 text-base font-medium transition">
                     {{ __('landing.nav_approach') }}
                 </a>
                 <a href="#positioning"
-                class="text-gray-600 hover:text-gray-950 text-sm font-medium transition">
+                class="text-gray-600 hover:text-gray-950 text-base font-medium transition">
                     {{ __('landing.nav_about') }}
                 </a>
                 <a href="#how-it-works"
-                class="text-gray-600 hover:text-gray-950 text-sm font-medium transition">
+                class="text-gray-600 hover:text-gray-950 text-base font-medium transition">
                     {{ __('landing.nav_how') }}
                 </a>
                 <a href="#evaluacion"
-                class="bg-gray-950 text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-gray-800 transition">
+                class="bg-gray-950 text-white text-base font-semibold px-5 py-2 rounded-full hover:bg-gray-800 transition">
                     {{ __('landing.nav_contact') }}
             </a>
         </nav>

@@ -1,5 +1,5 @@
-<section id="evaluacion" class="min-h-screen flex items-center bg-gray-50 px-6 py-24">
-    <div class="max-w-2xl mx-auto">
+<section id="evaluacion" class="min-h-screen flex items-center justify-center bg-gray-950 px-6 py-24">
+    <div class="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-2xl">
 
         <h2 class="text-3xl font-bold text-gray-900 text-center">
             {{ __('landing.form_title') }}
@@ -72,10 +72,9 @@
                 <select name="tipo_propiedad"
                         class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-amber-400 focus:outline-none @error('tipo_propiedad') border-red-500 @enderror">
                     <option value="">{{ __('landing.form_select') }}</option>
-                    <option value="apartamento" {{ old('tipo_propiedad') == 'apartamento' ? 'selected' : '' }}>{{ __('landing.property_apartment') }}</option>
-                    <option value="casa"        {{ old('tipo_propiedad') == 'casa'        ? 'selected' : '' }}>{{ __('landing.property_house') }}</option>
-                    <option value="estudio"     {{ old('tipo_propiedad') == 'estudio'     ? 'selected' : '' }}>{{ __('landing.property_studio') }}</option>
-                    <option value="otro"        {{ old('tipo_propiedad') == 'otro'        ? 'selected' : '' }}>{{ __('landing.property_other') }}</option>
+                    <option value="departamento" {{ old('tipo_propiedad') == 'departamento' ? 'selected' : '' }}>{{ __('landing.property_apartment') }}</option>
+                    <option value="casa"         {{ old('tipo_propiedad') == 'casa'         ? 'selected' : '' }}>{{ __('landing.property_house') }}</option>
+                    <option value="otro"         {{ old('tipo_propiedad') == 'otro'         ? 'selected' : '' }}>{{ __('landing.property_other') }}</option>
                 </select>
                 @error('tipo_propiedad') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
             </div>
@@ -94,22 +93,6 @@
                     </label>
                 </div>
                 @error('ya_publicada') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
-            </div>
-
-            {{-- Permite arriendo temporal --}}
-            <div>
-                <label class="block text-sm font-medium text-gray-700">{{ __('landing.form_allows_rental') }}</label>
-                <div class="mt-2 flex gap-6">
-                    <label class="flex items-center gap-2">
-                        <input type="radio" name="permite_arriendo_temporal" value="1" {{ old('permite_arriendo_temporal') == '1' ? 'checked' : '' }}>
-                        {{ __('landing.yes') }}
-                    </label>
-                    <label class="flex items-center gap-2">
-                        <input type="radio" name="permite_arriendo_temporal" value="0" {{ old('permite_arriendo_temporal') == '0' ? 'checked' : '' }}>
-                        {{ __('landing.no') }}
-                    </label>
-                </div>
-                @error('permite_arriendo_temporal') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
             </div>
 
             {{-- Comentarios --}}

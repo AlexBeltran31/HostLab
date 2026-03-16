@@ -14,7 +14,7 @@
         </p>
 
         <a href="#evaluacion"
-           class="mt-10 inline-block bg-amber-400 text-gray-950 font-semibold px-8 py-4 rounded-full hover:bg-amber-300 transition">
+           class="mt-10 inline-block bg-amber-400 text-gray-950 font-semibold px-6 py-2 rounded-full hover:bg-amber-300 transition">
             {{ __('landing.hero_cta') }}
         </a>
 
