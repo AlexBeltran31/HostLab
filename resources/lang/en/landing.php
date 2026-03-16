@@ -31,10 +31,10 @@ return [
     'approach_title'        => 'We stand out in every detail.',
     'approach_description'  => 'From preparing your property to guest care, we look after every aspect of the experience.',
     'approach_item1_title' => 'Premium visual production',
-    'approach_item1_desc'  => 'Professional photography and visual optimization to position your property among the most attractive on the platform.',
-    'approach_item2_title' => 'Full guest management',
+    'approach_item1_desc'  => 'Professional photography and visual optimization to position your property among platforms.', //??
+    'approach_item2_title' => 'Full guest<br>management',
     'approach_item2_desc'  => 'Continuous support, stay coordination and incident resolution to guarantee a flawless experience.',
-    'approach_item3_title' => 'Revenue management',
+    'approach_item3_title' => 'Revenue<br>management',
     'approach_item3_desc'  => 'Dynamic rate optimization based on demand, seasonality and market analysis to maximize income.',
     'approach_item4_title' => 'Advanced security & control',
     'approach_item4_desc'  => 'Guest verification and monitoring technology to protect your property.',

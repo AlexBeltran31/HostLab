@@ -1,7 +1,7 @@
 <section id="approach" class="min-h-screen flex items-center bg-gray-50 px-6 py-24">
     <div class="max-w-6xl mx-auto w-full">
 
-        <div class="text-center mb-16">
+        <div class="text-center mb-8">
             <span class="text-sm font-medium tracking-widest text-amber-400 uppercase">
                 {{ __('landing.approach_badge') }}
             </span>
@@ -20,8 +20,8 @@
                     <img src="{{ asset('images/produccion.png') }}" alt="Producción visual" class="w-full h-full object-cover">
                 </div>
                 <div class="p-6 flex flex-col flex-1">
-                    <h3 class="text-lg font-semibold text-center" style="color: #0F1B2D;">📸 {{ __('landing.approach_item1_title') }}</h3>
-                    <p class="mt-3 text-sm text-gray-500 flex-1">{{ __('landing.approach_item1_desc') }}</p>
+                    <h3 class="text-lg font-semibold text-center min-h-[64px] flex items-center justify-center leading-tight" style="color: #0F1B2D;">{{ __('landing.approach_item1_title') }}</h3>
+                    <p class="mt-3 text-sm text-gray-500 text-center">{{ __('landing.approach_item1_desc') }}</p>
                 </div>
             </div>
 
@@ -30,8 +30,8 @@
                     <img src="{{ asset('images/gestion.png') }}" alt="Gestión integral" class="w-full h-full object-cover">
                 </div>
                 <div class="p-6 flex flex-col flex-1">
-                    <h3 class="text-lg font-semibold text-center" style="color: #0F1B2D;">🛎 {{ __('landing.approach_item2_title') }}</h3>
-                    <p class="mt-3 text-sm text-gray-500 flex-1">{{ __('landing.approach_item2_desc') }}</p>
+                    <h3 class="text-lg font-semibold text-center min-h-[64px] flex items-center justify-center leading-tight" style="color: #0F1B2D;">{!! __('landing.approach_item2_title') !!}</h3>
+                    <p class="mt-3 text-sm text-gray-500 text-center">{{ __('landing.approach_item2_desc') }}</p>
                 </div>
             </div>
 
@@ -40,8 +40,8 @@
                     <img src="{{ asset('images/revenue.png') }}" alt="Revenue management" class="w-full h-full object-cover">
                 </div>
                 <div class="p-6 flex flex-col flex-1">
-                    <h3 class="text-lg font-semibold text-center" style="color: #0F1B2D;">📈 {{ __('landing.approach_item3_title') }}</h3>
-                    <p class="mt-3 text-sm text-gray-500 flex-1">{{ __('landing.approach_item3_desc') }}</p>
+                    <h3 class="text-lg font-semibold text-center min-h-[64px] flex items-center justify-center leading-tight" style="color: #0F1B2D;">{!! __('landing.approach_item3_title') !!}</h3>
+                    <p class="mt-3 text-sm text-gray-500 text-center">{{ __('landing.approach_item3_desc') }}</p>
                 </div>
             </div>
 
@@ -50,8 +50,8 @@
                     <img src="{{ asset('images/seguridad.png') }}" alt="Seguridad" class="w-full h-full object-cover">
                 </div>
                 <div class="p-6 flex flex-col flex-1">
-                    <h3 class="text-lg font-semibold text-center" style="color: #0F1B2D;">🛡 {{ __('landing.approach_item4_title') }}</h3>
-                    <p class="mt-3 text-sm text-gray-500 flex-1">{{ __('landing.approach_item4_desc') }}</p>
+                    <h3 class="text-lg font-semibold text-center min-h-[64px] flex items-center justify-center leading-tight" style="color: #0F1B2D;">{{ __('landing.approach_item4_title') }}</h3>
+                    <p class="mt-3 text-sm text-gray-500 text-center">{{ __('landing.approach_item4_desc') }}</p>
                 </div>
             </div>
 
