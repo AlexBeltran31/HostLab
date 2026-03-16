@@ -6,7 +6,7 @@ return [
 
     // Nav
     'nav_about'    => 'Nosotros',
-    'nav_approach' => 'Enfoque',
+    'nav_approach' => 'Servicios',
     'nav_how'      => 'Cómo funciona',
     'nav_contact'  => 'Contacto',
 
