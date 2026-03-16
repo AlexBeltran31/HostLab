@@ -72,7 +72,6 @@ return [
     // Property types
     'property_apartment' => 'Apartment',
     'property_house'     => 'House',
-    'property_studio'    => 'Studio',
     'property_other'     => 'Other',
 
     // Common

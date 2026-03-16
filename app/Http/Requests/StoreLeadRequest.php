@@ -19,7 +19,7 @@ class StoreLeadRequest extends FormRequest
             'telefono'                  => ['nullable', 'regex:/^\+?[0-9\s\-\(\)]{7,20}$/'],
             'region'                    => ['required', 'string', 'max:255'],
             'comuna'                    => ['required', 'string', 'max:255'],
-            'tipo_propiedad'            => ['required', 'string', 'in:apartamento,casa,estudio,otro'],
+            'tipo_propiedad'            => ['required', 'string', 'in:departamento,casa,otro'],
             'ya_publicada'              => ['required', 'boolean'],
             'comentarios'               => ['nullable', 'string', 'max:1000'],
         ];

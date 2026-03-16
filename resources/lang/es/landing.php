@@ -70,9 +70,8 @@ return [
     'form_success'            => '¡Gracias! Nos pondremos en contacto contigo pronto.',
 
     // Property types
-    'property_apartment' => 'Apartamento',
+    'property_apartment' => 'Departamento',
     'property_house'     => 'Casa',
-    'property_studio'    => 'Estudio',
     'property_other'     => 'Otro',
 
     // Common
