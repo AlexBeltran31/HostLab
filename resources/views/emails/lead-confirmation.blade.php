@@ -27,7 +27,8 @@
             <div class="highlight">
                 <p style="margin:0; color:#92400e;"><strong>Resumen de tu solicitud:</strong></p>
                 <p style="margin:8px 0 0; color:#92400e;">
-                    📍 Ciudad: {{ $lead->ciudad }}<br>
+                    📍 Región: {{ $lead->region }}<br>
+                    🏘️ Comuna: {{ $lead->comuna }}<br>
                     🏠 Tipo: {{ ucfirst($lead->tipo_propiedad) }}<br>
                     📧 Email: {{ $lead->email }}
                 </p>
