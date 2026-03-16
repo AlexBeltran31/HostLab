@@ -13,7 +13,7 @@ return [
     // Hero
     'hero_badge'    => 'Premium Management',
     'hero_title'    => 'Your property deserves more than a platform.',
-    'hero_subtitle' => 'We handle everything so your property generates income without any hassle.',
+    'hero_subtitle' => 'We manage your property so it generates income without any hassle.',
     'hero_cta'      => 'Evaluate your property for free',
 
     // Positioning
@@ -54,7 +54,7 @@ return [
 
     // Form
     'form_title'              => 'Evaluate your property',
-    'form_subtitle'           => 'Fill out the form and we\'ll contact you within 24 hours.',
+    'form_subtitle'           => 'Fill out the form and we\'ll be in touch shortly.',
     'form_name'               => 'Full name',
     'form_email'              => 'Email address',
     'form_phone'              => 'Phone',

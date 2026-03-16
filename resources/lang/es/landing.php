@@ -13,7 +13,7 @@ return [
     // Hero
     'hero_badge'    => 'Gestión Premium',
     'hero_title'    => 'Tu propiedad merece más que una plataforma.',
-    'hero_subtitle' => 'Nos encargamos de todo para que tu propiedad genere ingresos sin que tengas que preocuparte por nada.',
+    'hero_subtitle' => 'Gestionamos tu propiedad para que genere ingresos sin complicaciones.',
     'hero_cta'      => 'Evalúa tu propiedad gratis',
 
     // Positioning
@@ -54,7 +54,7 @@ return [
 
     // Form
     'form_title'              => 'Evalúa tu propiedad',
-    'form_subtitle'           => 'Completa el formulario y te contactamos en menos de 24 horas.',
+    'form_subtitle'           => 'Completa el formulario y te contactamos en breve.',
     'form_name'               => 'Nombre completo',
     'form_email'              => 'Correo electrónico',
     'form_phone'              => 'Teléfono',
