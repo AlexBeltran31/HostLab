@@ -21,7 +21,6 @@ class StoreLeadRequest extends FormRequest
             'comuna'                    => ['required', 'string', 'max:255'],
             'tipo_propiedad'            => ['required', 'string', 'in:apartamento,casa,estudio,otro'],
             'ya_publicada'              => ['required', 'boolean'],
-            'permite_arriendo_temporal' => ['required', 'boolean'],
             'comentarios'               => ['nullable', 'string', 'max:1000'],
         ];
     }
@@ -38,7 +37,6 @@ class StoreLeadRequest extends FormRequest
             'tipo_propiedad.required'            => 'Selecciona el tipo de propiedad.',
             'tipo_propiedad.in'                  => 'El tipo de propiedad no es válido.',
             'ya_publicada.required'              => 'Indica si la propiedad ya está publicada.',
-            'permite_arriendo_temporal.required' => 'Indica si permite arriendo temporal.',
         ];
     }
 }

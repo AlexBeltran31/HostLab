@@ -96,22 +96,6 @@
                 @error('ya_publicada') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
             </div>
 
-            {{-- Permite arriendo temporal --}}
-            <div>
-                <label class="block text-sm font-medium text-gray-700">{{ __('landing.form_allows_rental') }}</label>
-                <div class="mt-2 flex gap-6">
-                    <label class="flex items-center gap-2">
-                        <input type="radio" name="permite_arriendo_temporal" value="1" {{ old('permite_arriendo_temporal') == '1' ? 'checked' : '' }}>
-                        {{ __('landing.yes') }}
-                    </label>
-                    <label class="flex items-center gap-2">
-                        <input type="radio" name="permite_arriendo_temporal" value="0" {{ old('permite_arriendo_temporal') == '0' ? 'checked' : '' }}>
-                        {{ __('landing.no') }}
-                    </label>
-                </div>
-                @error('permite_arriendo_temporal') <p class="mt-1 text-sm text-red-500">{{ $message }}</p> @enderror
-            </div>
-
             {{-- Comentarios --}}
             <div>
                 <label class="block text-sm font-medium text-gray-700">{{ __('landing.form_comments') }} <span class="text-gray-400">({{ __('landing.optional') }})</span></label>
