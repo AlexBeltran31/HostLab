@@ -1,4 +1,4 @@
-<section id="evaluacion" class="py-24 bg-gray-50 px-6">
+<section id="evaluacion" class="min-h-screen flex items-center bg-gray-50 px-6 py-24">
     <div class="max-w-2xl mx-auto">
 
         <h2 class="text-3xl font-bold text-gray-900 text-center">
