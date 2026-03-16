@@ -1,6 +1,4 @@
-<section id="approach" class="h-screen flex items-center bg-gray-950 text-white px-6">
-    <div class="max-w-5xl mx-auto">
-
+<section id="approach" class="min-h-screen flex items-center bg-gray-950 text-white px-6 py-24">    <div class="max-w-5xl mx-auto">
         <div class="text-center">
             <span class="text-sm font-medium tracking-widest text-amber-400 uppercase">
                 {{ __('landing.approach_badge') }}
