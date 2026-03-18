@@ -5,11 +5,11 @@
             {{ __('landing.hero_badge') }}
         </span>
 
-        <h1 class="mt-4 text-5xl font-bold leading-tight">
+        <h1 class="mt-2 text-5xl font-bold leading-tight">
             {{ __('landing.hero_title') }}
         </h1>
 
-        <p class="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
+        <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">
             {{ __('landing.hero_subtitle') }}
         </p>
 
