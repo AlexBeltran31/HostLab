@@ -20,9 +20,8 @@
 
     {{-- Flash message --}}
     @if (session('success'))
-        <div id="flash-message" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg whitespace-nowrap flex items-center gap-4">
-            <span>{{ session('success') }}</span>
-            <button onclick="document.getElementById('flash-message').remove()" class="text-white font-bold text-lg leading-none hover:text-green-200 transition">
+        <div id="flash-message" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg whitespace-nowrap flex items-center gap-4">            <span>{{ session('success') }}</span>
+            <button onclick="document.getElementById('flash-message').remove()" class="text-white font-bold text-lg leading-none hover:text-green-200 transition flex-shrink-0">
                 &times;
             </button>
         </div>

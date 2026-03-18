@@ -67,7 +67,7 @@ return [
     'form_allows_rental'      => 'Does the building allow short-term rentals?',
     'form_comments'           => 'Additional comments',
     'form_submit'             => 'Submit evaluation',
-    'form_success'            => 'Thank you! We will get in touch with you soon.',
+    'form_success'            => 'Thank you! We\'ll be in touch soon.',
 
     // Property types
     'property_apartment' => 'Apartment',
