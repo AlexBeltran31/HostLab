@@ -67,7 +67,7 @@ return [
     'form_allows_rental'      => '¿El reglamento permite arriendo temporal?',
     'form_comments'           => 'Comentarios adicionales',
     'form_submit'             => 'Enviar evaluación',
-    'form_success'            => '¡Gracias! Nos pondremos en contacto contigo pronto.',
+    'form_success'            => '¡Gracias! Te contactaremos pronto.',
 
     // Property types
     'property_apartment' => 'Departamento',
