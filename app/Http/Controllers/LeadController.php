@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreLeadRequest;
 use App\Mail\LeadConfirmation;
 use App\Mail\LeadNotification;
+use App\Services\CallMeBotService;
 use App\Models\Lead;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Log;
@@ -34,6 +35,12 @@ class LeadController extends Controller
             Mail::to(config('mail.admin_address'))->send(new LeadNotification($lead));
         } catch (\Exception $e) {
             Log::error('Error enviando notificación al admin: ' . $e->getMessage());
+        }
+
+        try {
+            (new CallMeBotService())->sendLeadNotification($lead);
+        } catch (\Exception $e) {
+            Log::error('Error enviando WhatsApp a la clienta: ' . $e->getMessage());
         }
 
         return redirect()
